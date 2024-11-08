@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Залупа обыкновенная">
+  <meta name="description" content="Залупа в тесте">
+  <meta name="keywords" content="проверка на залупу">
+  <title>Latgales benders</title>
+</head>
+
+<body>
+
+  <form>
+
+    <label for="user_name">Тест на пидора</label>
+    <input type="text" placeholder="Ты пидор" value="Укажи имя" maxlength="5" name="user_name" id="user_name">
+    <input type="password"><br><br>
+    <input type="email"><br><br>
+    <input type="color"><br><br>
+    <input type="date"><br><br>
+    <input type="time"><br><br>
+    <input type="checkbox"><br><br>
+    <input type="radio" name="state">Мужчина<br><br>
+    <input type="radio" name="state">Женщина<br><br>
+    <input type="file"><br><br>
+    <input type="submit" value="Отправить"><br><br>
+    <input type="reset" value="Очистить"><br><br>
+  </form>
+
+  <p><b>
+      <pt title="ебучий">Костя депутат!</p></b></p>
+
+  <img src="http://www.grani.lv/uploads/posts/2018-02/1517919307_spy.jpg" width="40%" height="100%" title="Красавчик"
+    alt="Будущий президент">
+
+
+  <ul type="circle">
+    <li>На одной волне с молодежью!</li>
+    <li>Всегда помогает старшим!</li>
+    <li>Соляра дешевле чем на других точках!</li>
+  </ul>
+  <hr>
+
+  <ul type="square">
+    <li>ДА!Наркотикам!</li>
+    <li>ДА!Бане с пацанами!</li>
+    <li>НЕТ!Мозгоёбке!</li>
+    <hr>
+
+    <a href="mailto:ruskus228@gmail.com" title="моя почта">написать на почту</a>
+    <hr>
+    <table border="3" width="500px" align="center">
+
+      <tbody>
+        <tr>
+
+          <th>Проверка</th>
+          <th>Проверка</th>
+          <th>Провепка</th>
+          <th>Проверка</th>
+          <th>Проверка</th>
+
+        </tr>
+
+        <tr>
+
+          <th>Проверка</th>
+          <th>Проверка</th>
+          <th>Проверка</th>
+          <th>Проверка</th>
+          <th>Проверка</th>
+
+        </tr>
+
+        <tr>
+
+          <th>Проверка</th>
+          <th>Проверка</th>
+          <th>Проверка</th>
+          <th>Проверка</th>
+          <th>Проверка</th>
+
+        </tr>
+
+        <tr>
+
+          <th>Проверка</th>
+          <th>Проверка</th>
+          <th>Проверка</th>
+          <th>Проверка</th>
+          <th>Проверка</th>
+
+        </tr>
+        
+      </tbody>
+
+    </table>
+
+    <hr>
+
+    <form>
+
+      <textarea placeholder="Текс"></textarea><br><br>
+      <button type="reset">отправить</button><br><br>
+
+      <select>
+
+        <option>BMW</option>
+        <option>Audi</option>
+        <option>Иж</option>
+
+      </select>
+
+    </form>
+<script>
+debugger
+const getdata = async () => {
+let headersList = {
+ "Accept": "*/*",
+ "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiMzMyNDExNEAwIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiU2t5bmV0IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc2lkIjoiMzAwMTUzMiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2hhc2giOiJhMWZmYWZkMi03YmI4LTQ1MjgtOTRkMC00ZTI0ZjA5NTkwMjgiLCJleHAiOjE3MTI5OTI1MjUsImlzcyI6Imh0dHBzOi8vZWNvbS5lbGtvLnJ1IiwiYXVkIjoibG9jYWxob3N0In0._B0FXcExrvLlC9F8FxMJ1v5ZYWm_kao9-YHMNp4N7p8",
+ "Content-Type": "application/json"
+}
+
+let bodyContent = JSON.stringify("noutbuki-i-kompyutery");
+
+let response = await fetch("https://api2.elko.ru/api/Catalogs/GetCategoriesByUrl", { 
+  method: "POST",
+  body: bodyContent,
+  headers: headersList
+});
+
+let data = await response.text();
+console.log(data);
+}
+getdata();
+</script>
+
+</body>
+
+</html>
